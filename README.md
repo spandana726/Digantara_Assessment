@@ -1,4 +1,4 @@
-# Digantara AI/ML Data Annotation Intern — Assessment Submission
+# Digantara AI/ML Data Annotation Intern - Assessment Submission
 
 ## Overview
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 Place the 10 raw FITS files in:
 ```
-digantara_assignment/Datasets_Assessment/Datasets_Assessment/
+Digantara_Assessment/Datasets_Assessment/Datasets_Assessment/
 ```
 
 The pipeline expects exactly 10 FITS files with dimensions 9568×6380 pixels.
