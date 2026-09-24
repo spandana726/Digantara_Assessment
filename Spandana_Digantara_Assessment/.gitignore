@@ -1,0 +1,17 @@
+output/
+data/metadata/
+reports/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.npy
+submission/
+*.zip
+Datasets_Assessment/
+.gemini/
+extract_pdf.py
+inspect_fits_raw.py
+test_single.py
+create_submission.py

@@ -1,0 +1,50 @@
+dataset:
+  raw_dir: "Datasets_Assessment/Datasets_Assessment"
+  expected_count: 10
+  expected_width: 9568
+  expected_height: 6380
+
+tiling:
+  tile_size: 1024
+  pad_value: 0
+
+classes:
+  0: "blob"
+  1: "streak"
+
+preprocessing:
+  contrast_stretch_low_pct: 1.0
+  contrast_stretch_high_pct: 99.9
+
+detection:
+  sigma: 5.0
+  min_area: 3
+  background_sigma_clip: 3.0
+  background_max_iters: 5
+
+classification:
+  streak_min_aspect_ratio: 3.0
+  streak_min_eccentricity: 0.85
+  short_streak_min_aspect_ratio: 2.0
+  short_streak_min_eccentricity: 0.7
+  short_streak_max_compactness: 0.4
+  short_streak_min_major_axis: 8.0
+  faint_min_snr: 3.0
+  faint_max_area: 50
+
+yolo:
+  polygon_tolerance: 1.5
+  min_polygon_points: 4
+  min_iou_threshold: 0.80
+
+output:
+  base_dir: "output"
+  tiles_vis_dir: "output/tiles_vis"
+  masks_dir: "output/masks"
+  yolo_images_dir: "output/yolo/images"
+  yolo_labels_dir: "output/yolo/labels"
+  overlays_dir: "output/overlays"
+  reconstructed_dir: "output/reconstructed"
+  inspection_dir: "output/inspection"
+  metadata_dir: "data/metadata"
+  reports_dir: "reports"
